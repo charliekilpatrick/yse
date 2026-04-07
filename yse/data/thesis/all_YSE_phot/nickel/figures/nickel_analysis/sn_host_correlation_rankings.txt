@@ -1,0 +1,110 @@
+SN–host Pearson correlation rank (strongest |r| first). x-axis = SN quantity; y-axis = BLAST host quantity.
+
+  1.  r=+0.4459  |r|=0.4459  file=nickel_mass_vs_local_sfd.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (local_sfd, y-axis): \SigmaSFR (M_\odot yr^{-1} kpc^{-2}; log scale)
+
+  2.  r=-0.3175  |r|=0.3175  file=nickel_mass_vs_local_aperture_host_logsfh.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (local_aperture_host_logsfh, y-axis): Local Host Stellar Age (Gyr)
+
+  3.  r=+0.3034  |r|=0.3034  file=plateau_duration_vs_local_aperture_host_logsfh.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (local_aperture_host_logsfh, y-axis): Local Host Stellar Age (Gyr)
+
+  4.  r=-0.2972  |r|=0.2972  file=nickel_mass_vs_global_aperture_host_logzsol.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (global_aperture_host_logzsol, y-axis): Global Metallicity (log(Z/Z_\odot))
+
+  5.  r=-0.2444  |r|=0.2444  file=peak_luminosity_vs_local_aperture_host_log_age.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (local_aperture_host_log_age, y-axis): Local Host Stellar Age (Gyr)
+
+  6.  r=-0.2441  |r|=0.2441  file=plateau_duration_vs_global_aperture_host_log_mass.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (global_aperture_host_log_mass, y-axis): Global Stellar Mass (log(M_\odot))
+
+  7.  r=+0.2385  |r|=0.2385  file=peak_luminosity_vs_local_sfd.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (local_sfd, y-axis): \SigmaSFR (M_\odot yr^{-1} kpc^{-2}; log scale)
+
+  8.  r=+0.2247  |r|=0.2247  file=plateau_duration_vs_local_aperture_host_logzsol.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (local_aperture_host_logzsol, y-axis): Local Metallicity (log(Z/Z_\odot))
+
+  9.  r=-0.2227  |r|=0.2227  file=nickel_mass_vs_local_aperture_host_logzsol.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (local_aperture_host_logzsol, y-axis): Local Metallicity (log(Z/Z_\odot))
+
+ 10.  r=-0.2071  |r|=0.2071  file=peak_luminosity_vs_global_aperture_host_logsfh.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (global_aperture_host_logsfh, y-axis): Global Host Stellar Age (Gyr)
+
+ 11.  r=-0.2011  |r|=0.2011  file=plateau_duration_vs_global_aperture_host_logzsol.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (global_aperture_host_logzsol, y-axis): Global Metallicity (log(Z/Z_\odot))
+
+ 12.  r=-0.1805  |r|=0.1805  file=plateau_duration_vs_global_aperture_host_log_sfr.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (global_aperture_host_log_sfr, y-axis): Global Star-Formation Rate (log(M_\odot yr^{-1}))
+
+ 13.  r=+0.1492  |r|=0.1492  file=nickel_mass_vs_global_aperture_host_log_ssfr.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (global_aperture_host_log_ssfr, y-axis): Global Specific Star-Formation Rate (log(yr^{-1}))
+
+ 14.  r=-0.1470  |r|=0.1470  file=peak_luminosity_vs_global_aperture_host_logzsol.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (global_aperture_host_logzsol, y-axis): Global Metallicity (log(Z/Z_\odot))
+
+ 15.  r=-0.1394  |r|=0.1394  file=peak_luminosity_vs_global_aperture_host_log_mass.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (global_aperture_host_log_mass, y-axis): Global Stellar Mass (log(M_\odot))
+
+ 16.  r=+0.1299  |r|=0.1299  file=nickel_mass_vs_global_aperture_host_log_sfr.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (global_aperture_host_log_sfr, y-axis): Global Star-Formation Rate (log(M_\odot yr^{-1}))
+
+ 17.  r=-0.1184  |r|=0.1184  file=peak_luminosity_vs_global_aperture_host_log_sfr.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (global_aperture_host_log_sfr, y-axis): Global Star-Formation Rate (log(M_\odot yr^{-1}))
+
+ 18.  r=-0.0897  |r|=0.0897  file=plateau_duration_vs_local_aperture_host_log_age.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (local_aperture_host_log_age, y-axis): Local Host Stellar Age (Gyr)
+
+ 19.  r=-0.0885  |r|=0.0885  file=plateau_duration_vs_global_aperture_host_logsfh.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (global_aperture_host_logsfh, y-axis): Global Host Stellar Age (Gyr)
+
+ 20.  r=+0.0510  |r|=0.0510  file=plateau_duration_vs_local_sfd.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (local_sfd, y-axis): \SigmaSFR (M_\odot yr^{-1} kpc^{-2}; log scale)
+
+ 21.  r=-0.0490  |r|=0.0490  file=nickel_mass_vs_global_aperture_host_logsfh.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (global_aperture_host_logsfh, y-axis): Global Host Stellar Age (Gyr)
+
+ 22.  r=+0.0464  |r|=0.0464  file=peak_luminosity_vs_local_aperture_host_logsfh.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (local_aperture_host_logsfh, y-axis): Local Host Stellar Age (Gyr)
+
+ 23.  r=-0.0252  |r|=0.0252  file=nickel_mass_vs_global_aperture_host_log_mass.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (global_aperture_host_log_mass, y-axis): Global Stellar Mass (log(M_\odot))
+
+ 24.  r=+0.0121  |r|=0.0121  file=plateau_duration_vs_global_aperture_host_log_ssfr.png
+      SN parameter (plateau_duration, x-axis): Rest-frame plateau duration (days)
+      Host parameter (global_aperture_host_log_ssfr, y-axis): Global Specific Star-Formation Rate (log(yr^{-1}))
+
+ 25.  r=-0.0065  |r|=0.0065  file=peak_luminosity_vs_global_aperture_host_log_ssfr.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (global_aperture_host_log_ssfr, y-axis): Global Specific Star-Formation Rate (log(yr^{-1}))
+
+ 26.  r=+0.0052  |r|=0.0052  file=peak_luminosity_vs_local_aperture_host_logzsol.png
+      SN parameter (peak_luminosity, x-axis): Peak Luminosity (log(erg s^{-1}))
+      Host parameter (local_aperture_host_logzsol, y-axis): Local Metallicity (log(Z/Z_\odot))
+
+ 27.  r=+0.0033  |r|=0.0033  file=nickel_mass_vs_local_aperture_host_log_age.png
+      SN parameter (nickel_mass, x-axis): Nickel-56 Ejecta Mass (M_{\odot})
+      Host parameter (local_aperture_host_log_age, y-axis): Local Host Stellar Age (Gyr)
+

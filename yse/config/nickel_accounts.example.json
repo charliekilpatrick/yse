@@ -1,0 +1,7 @@
+[
+  {
+    "archive_folder": "Your.Name_As_On_Server",
+    "http_user": "your_basic_auth_username",
+    "http_password": "your_basic_auth_password"
+  }
+]
