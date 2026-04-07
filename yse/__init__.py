@@ -1,8 +1,8 @@
 """
 YSE data and tooling.
 
-Stable imports: ``from yse import read_YSE_ZTF_snana_dir, DATA`` or use ``yse.paths``,
-``yse.snana_io``, and ``yse.lib`` for shared helpers.
+Typical imports: ``from yse import read_YSE_ZTF_snana_dir, DATA``; shared helpers live in
+``yse.util`` (photometry I/O, plotting, HTTP, selection).
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ from yse.paths import (
     EXTRABOL,
     YSEPZ,
 )
-from yse.snana_io import Observation, read_YSE_ZTF_snana_dir
+from yse.snana import Observation, read_YSE_ZTF_snana_dir
 
 __all__ = [
     "DATA",

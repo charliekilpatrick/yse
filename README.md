@@ -1,21 +1,23 @@
-# YSE Type II population
+# yse-type-ii-population
 
-Python package and CLIs for the YSE DR1 Type II supernova sample: SNANA light curves, thesis photometry, nickel mass work, and supporting downloads. **Requires Python 3.10+** (needed for optional [synphot](https://synphot.readthedocs.io/)–based nebular code in `extrabol_gp`).
+Python package for **Young Supernova Experiment DR1** spectroscopic Type II SNe: SNANA light-curve I/O, thesis photometry pipelines, bolometric and \(^{56}\)Ni analysis, BLAST host–SN figures, and download helpers.
+
+**Python 3.10+** required. Optional nebular SED code in `yse.extrabol.extrabol_gp` needs **`pip install -e ".[extrabol-gp]"`** (synphot + numba).
 
 ## Layout
 
-| Location | Role |
-|----------|------|
-| **`yse/paths.py`** | Canonical `Path` objects under `yse/data/` (thesis tree, DR1 SNANA dirs, nickel, etc.). |
-| **`yse/snana_io.py`** | Reader for YSE/ZTF SNANA `*.dat` directories (re-exported from `import yse`). |
-| **`yse/lib/`** | Shared library code: photometry I/O, passbands, plotting, selection, HTTP helpers, bolometric export. |
-| **`yse/cli/`** | Runnable modules (`python -m yse.cli.<name>`). See **`yse/cli/README.md`** for the full command list. |
-| **`yse/extrabol/`** | GP **`extrabol_gp`** pipeline ([synphot](https://synphot.readthedocs.io/) + optional Numba). |
-| **`yse/data/`** | Datasets only — not importable (see **`yse/data/README.md`**). |
-| **`yse/config/`** | Example env / account templates (no secrets committed). |
-| **`yse/docs/`** | Non-code notes and background reading. |
+| Path | Role |
+|------|------|
+| **`yse/paths.py`** | Canonical paths under `yse/data/`. |
+| **`yse/snana.py`** | SNANA `*.dat` directory reader (also `from yse import read_YSE_ZTF_snana_dir`). |
+| **`yse/util/`** | Shared I/O, plotting, passbands, bolometric export, HTTP, selection, spectra. |
+| **`yse/cli/`** | Commands: `python -m yse.cli.<name>`. See **`yse/cli/README.md`**. |
+| **`yse/extrabol/`** | Gaussian-process extrabol (`extrabol_gp`). |
+| **`yse/data/`** | Data only — not importable (see **`yse/data/README.md`**). |
+| **`yse/config/`** | Environment templates (no secrets). |
+| **`yse/docs/`** | Notes and background reading. |
 
-There are no Jupyter notebooks in the repository. Auto-exports from stray `.ipynb` files (if you run the exporter) land in **`yse/notebook_cell_exports/`**.
+No notebooks are tracked; optional exports go to `yse/notebook_cell_exports/` via `yse.cli.jupytext_export`.
 
 ## Install
 
@@ -25,31 +27,35 @@ pip install -U pip setuptools wheel
 pip install -e .
 ```
 
-Optional stacks (only if you need those tools):
-
 ```bash
-pip install -e ".[extrabol-gp]"   # synphot + numba — nebular path in extrabol_gp
-pip install -e ".[ghost]"         # astro-ghost — host cross-match demo
-pip install -e ".[spectroscopy]"  # pypeit
-pip install -e ".[google]"        # Google API clients
+pip install -e ".[extrabol-gp]"   # synphot + numba — nebular extrabol_gp
+pip install -e ".[ghost]"          # astro-ghost
+pip install -e ".[spectroscopy]"   # pypeit
+pip install -e ".[google]"         # Google API clients
+pip install -e ".[dev]"            # pytest + ruff
 ```
-
-Core analysis dependencies (**emcee**, **george**, **astroquery**, **extinction**, **light-curve**) are required by the default install so every CLI in `yse.cli` resolves without extra extras, except where noted in **`yse/cli/README.md`**.
 
 ## Quick commands
 
 ```bash
-python -m yse.cli.snana_type_ii_cuts cuts --print-names
-python -m yse.cli.nickel_mcmc_valenti rth
-python -m yse.cli.nickel_host_blast_figures
+python -m yse.cli.snana_cuts cuts --print-names
+python -m yse.cli.nickel_mcmc rth
+python -m yse.cli.host_plots
 ```
 
-### Migrating from the old layout
+Default PNG output for `host_plots`: `yse.paths.NICKEL_ANALYSIS_FIGURES`.
 
-The former `yse.population.utils` package is now **`yse.lib`**. Runnable modules moved from `yse.population.analysis`, `notebooks`, `downloads`, and `devtools` into **`yse.cli`** with clearer names (for example `snana_population` → `snana_type_ii_cuts`, `nickel_host_figures` → `nickel_host_blast_figures`). GP extrabol lives under **`yse.extrabol`**. Update any `python -m yse.population…` invocations using the table in **`yse/cli/README.md`**.
+## Development
 
-UCOLICK / Lick archive downloads use variables described in **`yse/config/env.example`**. See **`yse/docs/README.md`** for operational notes.
+```bash
+pip install -e ".[dev]"
+ruff check yse
+```
 
 ## License
 
-MIT unless survey or archive policies restrict redistribution of bundled data files.
+MIT unless archive policies restrict redistribution of files under `yse/data/`.
+
+## Citation
+
+Cite YSE DR1 and surveys you use; acknowledge this software as appropriate for your journal.

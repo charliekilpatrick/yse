@@ -4,13 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yse-type-ii-population"
-version = "0.2.0"
-description = "YSE DR1 Type II supernova sample: SNANA I/O, thesis photometry pipelines, nickel analysis, and data layout helpers"
+version = "0.3.0"
+description = "YSE DR1 Type II supernovae: SNANA I/O, photometry pipelines, nickel analysis, BLAST host figures, and extrabol GP tools."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "C. Kilpatrick" }]
-keywords = ["astronomy", "supernova", "YSE", "ZTF", "SNANA", "Type II"]
+keywords = [
+    "astronomy",
+    "supernova",
+    "YSE",
+    "ZTF",
+    "SNANA",
+    "Type II",
+    "light curve",
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
@@ -19,6 +27,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Astronomy",
 ]
 dependencies = [
@@ -29,7 +38,6 @@ dependencies = [
     "scipy>=1.10",
     "requests>=2.28",
     "python-dateutil>=2.8",
-    # Used across MCMC nickel fits, extrabol-style GP code, and Villar GP CLI
     "emcee>=3.0",
     "george>=0.4",
     "astroquery>=0.4",
@@ -39,20 +47,14 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# Nebular / SED in ``yse.extrabol.extrabol_gp`` (synphot + optional Numba)
 extrabol-gp = ["synphot>=1.2", "numba>=0.57"]
-# GHOST host association demo CLI
 ghost = ["astro-ghost>=2.0"]
-# Lick / Google Drive–related tooling (if extended)
 google = [
     "google-api-python-client>=2.0",
     "google-auth-oauthlib>=1.0",
 ]
 spectroscopy = ["pypeit>=1.14"]
-dev = [
-    "pytest>=7.0",
-    "ruff>=0.1",
-]
+dev = ["pytest>=7.0", "ruff>=0.1"]
 
 [tool.setuptools.packages.find]
 where = ["."]

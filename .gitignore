@@ -38,6 +38,10 @@ dmypy.json
 *.cover
 *.log
 .DS_Store
+# Local symlink to a manuscript directory (never commit)
+paper
+paper/
+
 config/local.env
 yse/config/local.env
 *.pickle
