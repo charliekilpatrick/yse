@@ -11,6 +11,8 @@ DR1_SNANA_II = DATA / "dr1_snana_ii"
 DR1_SNANA_NOT_II = DATA / "dr1_snana_not_ii"
 THESIS = DATA / "thesis"
 THESIS_PHOT = THESIS / "all_YSE_phot"
+# Per-object SNANA ``2020*.dat`` single-file light curves (not the full DR1 tree) live here.
+THESIS_SNANA_DAT = THESIS_PHOT
 NICKEL_DIR = THESIS_PHOT / "nickel"
 # Valenti / Anderson / BLAST JSON / YSE nickel tables (thesis tree)
 NICKEL_DATA = NICKEL_DIR / "data"

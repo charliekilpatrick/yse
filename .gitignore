@@ -42,6 +42,9 @@ dmypy.json
 paper
 paper/
 
+# Stray per-object SNANA dumps belong under yse/data/thesis/all_YSE_phot/
+/2020*.dat
+
 config/local.env
 yse/config/local.env
 *.pickle

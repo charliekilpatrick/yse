@@ -4,17 +4,11 @@
 from __future__ import annotations
 
 import argparse
-import sys
 from collections import defaultdict
 from pathlib import Path
 
-# Editable install registers ``yse``; running from a clone adds the repo root.
-_ROOT = Path(__file__).resolve().parents[2]
-if str(_ROOT) not in sys.path:
-    sys.path.insert(0, str(_ROOT))
-
-from yse.paths import DR1_SNANA_II  # noqa: E402
-from yse.snana import read_YSE_ZTF_snana_dir  # noqa: E402
+from yse.paths import DR1_SNANA_II
+from yse.snana import read_YSE_ZTF_snana_dir
 
 
 def cmd_cuts(args: argparse.Namespace) -> None:

@@ -8,7 +8,7 @@ Python package for **Young Supernova Experiment DR1** spectroscopic Type II SNe:
 
 | Path | Role |
 |------|------|
-| **`yse/paths.py`** | Canonical paths under `yse/data/`. |
+| **`yse/paths.py`** | Canonical paths under `yse/data/`. Per-object SNANA `2020*.dat` files for the thesis sample live under `THESIS_PHOT` / `THESIS_SNANA_DAT` (not the repository root). |
 | **`yse/snana.py`** | SNANA `*.dat` directory reader (also `from yse import read_YSE_ZTF_snana_dir`). |
 | **`yse/util/`** | Shared I/O, plotting, passbands, bolometric export, HTTP, selection, spectra. |
 | **`yse/cli/`** | Commands: `python -m yse.cli.<name>`. See **`yse/cli/README.md`**. |

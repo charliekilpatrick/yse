@@ -20,6 +20,7 @@ from yse.paths import (
     SUPERBOL_ROOT,
     THESIS,
     THESIS_PHOT,
+    THESIS_SNANA_DAT,
     EXTRABOL,
     YSEPZ,
 )
@@ -39,6 +40,7 @@ __all__ = [
     "SUPERBOL_ROOT",
     "THESIS",
     "THESIS_PHOT",
+    "THESIS_SNANA_DAT",
     "EXTRABOL",
     "YSEPZ",
     "read_YSE_ZTF_snana_dir",
